@@ -1,0 +1,45 @@
+/* GENERATED FILE - DO NOT EDIT. Source: packages/design-tokens/src/tokens.json */
+:root, [data-manga-theme="dark"] {
+  --manga-background: #0B0F17;
+  --manga-surface: #151C26;
+  --manga-surface-elevated: #202A36;
+  --manga-text: #EFF3F9;
+  --manga-text-muted: #95A2B3;
+  --manga-outline: #263140;
+  --manga-accent: #B4EE84;
+  --manga-on-accent: #12200F;
+  --manga-accent-soft: #253728;
+  --manga-danger: #FFB4A9;
+  --manga-success: #78DCA6;
+  --manga-space-xs: 4px;
+  --manga-space-sm: 8px;
+  --manga-space-md: 12px;
+  --manga-space-lg: 16px;
+  --manga-space-xl: 20px;
+  --manga-space-xxl: 28px;
+  --manga-space-section: 32px;
+  --manga-radius-xs: 8px;
+  --manga-radius-sm: 10px;
+  --manga-radius-md: 12px;
+  --manga-radius-lg: 16px;
+  --manga-radius-xl: 20px;
+  --manga-font-size-caption: 11px;
+  --manga-font-size-body: 14px;
+  --manga-font-size-subtitle: 17px;
+  --manga-font-size-title: 24px;
+  --manga-font-size-hero: 30px;
+  --manga-touch-target: 48px;
+}
+[data-manga-theme="light"] {
+  --manga-background: #F5F7F6;
+  --manga-surface: #FFFFFF;
+  --manga-surface-elevated: #E8EEEA;
+  --manga-text: #172229;
+  --manga-text-muted: #657278;
+  --manga-outline: #DCE4E1;
+  --manga-accent: #336D3D;
+  --manga-on-accent: #FFFFFF;
+  --manga-accent-soft: #E1EEE3;
+  --manga-danger: #B3261E;
+  --manga-success: #17693B;
+}

@@ -1,0 +1,35 @@
+/* Gate 05 Phase B browser gallery. Design colors, spacing, radii originate in tokens.json. */
+.mb-gallery{min-height:100vh}
+.mb-inner{max-width:760px}
+.mb-gallery .mb-heading{font:700 var(--manga-font-size-subtitle) MangaUI,Tahoma,sans-serif;line-height:1.6;margin:0}
+.mb-gallery .mb-panel{background:var(--manga-surface);border:1px solid var(--manga-outline);border-radius:var(--manga-radius-lg);padding:var(--manga-space-lg)}
+.mb-gallery .mb-button{min-height:var(--manga-touch-target);border:0;border-radius:var(--manga-radius-md);background:var(--manga-accent);color:var(--manga-on-accent);padding:var(--manga-space-md) var(--manga-space-xl);font:700 var(--manga-font-size-body) MangaUI,Tahoma,sans-serif;cursor:pointer}
+.mb-gallery .mb-button-secondary{background:var(--manga-surface-elevated);color:var(--manga-text);border:1px solid var(--manga-outline)}
+.mb-gallery .mb-button:focus-visible,.mb-gallery input:focus-visible,.mb-gallery button:focus-visible{outline:3px solid var(--manga-accent);outline-offset:3px}
+.mb-gallery .mb-field{display:grid;gap:var(--manga-space-sm);font-size:var(--manga-font-size-body)}
+.mb-gallery .mb-field input{min-height:var(--manga-touch-target);width:100%;background:var(--manga-surface);border:1px solid var(--manga-outline);border-radius:var(--manga-radius-md);color:var(--manga-text);padding:var(--manga-space-md);font:400 var(--manga-font-size-body) MangaUI,Tahoma,sans-serif}
+.mb-gallery .mb-field input::placeholder{color:var(--manga-text-muted)}
+.mb-gallery .mb-feature{display:flex;gap:var(--manga-space-lg);align-items:center}
+.mb-gallery .mb-cover{width:104px;min-width:104px;height:148px;display:grid;place-items:center;text-align:center;padding:var(--manga-space-sm);border:1px solid var(--manga-outline);border-radius:var(--manga-radius-md);background:var(--manga-accent-soft);color:var(--manga-accent);font-weight:700}
+.mb-gallery .mb-feature-copy{display:grid;gap:var(--manga-space-sm);flex:1;min-width:0}
+.mb-gallery .mb-rating{font-weight:700;font-size:var(--manga-font-size-caption)}
+.mb-gallery .mb-progress-wrap{display:grid;gap:var(--manga-space-sm);color:var(--manga-text-muted)}
+.mb-gallery .mb-progress-track{height:8px;border-radius:var(--manga-radius-xs);background:var(--manga-outline);overflow:hidden}
+.mb-gallery .mb-progress-track>div{height:100%;background:var(--manga-accent)}
+.mb-gallery .mb-skeleton{display:grid;gap:var(--manga-space-sm)}
+.mb-gallery .mb-skeleton>div{height:14px;border-radius:var(--manga-radius-xs);background:var(--manga-surface-elevated)}
+.mb-gallery .mb-skeleton>div:first-child{height:22px}
+.mb-gallery .mb-tabs{display:flex;gap:var(--manga-space-xs);padding:var(--manga-space-xs);border:1px solid var(--manga-outline);background:var(--manga-surface);border-radius:var(--manga-radius-lg)}
+.mb-gallery .mb-tabs button{flex:1;background:transparent;color:var(--manga-text-muted);border:0;min-height:var(--manga-touch-target);font:700 var(--manga-font-size-caption) MangaUI,Tahoma,sans-serif;cursor:pointer}
+.mb-gallery .mb-tabs button[aria-selected="true"]{background:var(--manga-accent-soft);color:var(--manga-accent)}
+.mb-gallery .mb-states{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--manga-space-sm)}
+.mb-gallery .mb-notice{display:grid;gap:var(--manga-space-md);align-content:center}
+.mb-gallery .mb-error{color:var(--manga-danger)}
+.mb-gallery .mb-success{color:var(--manga-success)}
+.mb-gallery .mb-toast{background:var(--manga-accent-soft);border:1px solid var(--manga-accent);border-radius:var(--manga-radius-md);padding:var(--manga-space-lg);display:grid;gap:var(--manga-space-sm)}
+.mb-gallery .mb-backdrop{position:fixed;inset:0;background:#000000A6;display:flex;align-items:center;justify-content:center;padding:var(--manga-space-xl);z-index:1000}
+.mb-gallery .mb-dialog{width:min(100%,460px);display:grid;gap:var(--manga-space-lg)}
+.mb-gallery .mb-backdrop-bottom{align-items:flex-end}
+.mb-gallery .mb-sheet{width:min(100%,760px);display:grid;gap:var(--manga-space-lg);border-radius:var(--manga-radius-xl) var(--manga-radius-xl) 0 0}
+@media(max-width:460px){.mb-gallery .mb-states{grid-template-columns:1fr}.mb-gallery .mb-feature{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){.mb-gallery *, .mb-gallery *::before,.mb-gallery *::after{animation:none!important;transition:none!important}}

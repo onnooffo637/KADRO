@@ -1,0 +1,13 @@
+/* Phase C accessibility preview. Colors and dimensions come from generated tokens. */
+.mb-gallery .mc-access {display:grid;gap:var(--manga-space-lg)}
+.mb-gallery .mc-access h2 {margin:0}
+.mb-gallery .mc-options {display:flex;flex-wrap:wrap;gap:var(--manga-space-sm)}
+.mb-gallery .mc-options button {flex:1;min-width:90px}
+.mb-gallery .mc-options button[aria-pressed="true"] {background:var(--manga-accent-soft);color:var(--manga-accent);border:2px solid var(--manga-accent)}
+.mb-gallery .mc-text-preview {padding:var(--manga-space-lg);border:1px solid var(--manga-outline);border-radius:var(--manga-radius-md);overflow-wrap:anywhere;min-width:0}
+.mb-gallery .mc-text-preview p {font-size:calc(var(--manga-font-size-body) * var(--manga-preview-scale));line-height:1.7}
+.mb-gallery .mc-icon-row {display:flex;flex-wrap:wrap;gap:var(--manga-space-md);align-items:center}
+.mb-gallery .mc-icon-row span {display:inline-flex;align-items:center;gap:var(--manga-space-xs);min-height:var(--manga-touch-target)}
+.mb-gallery .mc-icon-directional {transform:scaleX(-1)}
+.mb-gallery .mc-access button:focus-visible {outline:3px solid var(--manga-accent);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.mb-gallery .mc-access *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
